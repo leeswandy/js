@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>eval()로 수식계산</h3>
+    <hr/>
+    <script>
+        let str = prompt("수식입력");
+        
+        // 입력된 문자열이 없는 경우
+        if (str == "") {
+            document.write("입력된 식이 없습니다.");
+        } 
+        //입력된 문자열이 있는 경우
+        else {
+            let res = eval(str);
+            document.write(str+ " = " +  res);
+
+        }
+   </script>
+    
+</body>
+</html>

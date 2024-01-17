@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>switch문을 이용한 과일 가격 계산</h3>
+    <hr/>
+
+    <script>
+        var fruits = "사과";
+        var price = 0;
+
+        switch (fruits) {
+            case "바나나":
+            price = 200;
+            break;
+            case "사과":
+                price = 300;
+                break;
+            case "체리":
+                price = 400;
+                break;
+            default:
+                document.write("팔지않습니다.");
+                price = 0;
+        }
+        document.write(fruits + "는 " + price + "원 입니다.");
+    </script>
+    
+</body>
+</html>

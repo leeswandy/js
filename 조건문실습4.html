@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("첫 번째 정수를 입력하세요:"));
+        let num2 = parseInt(prompt("두 번째 정수를 입력하세요:"));
+
+// 큰 수 찾기
+let largerNumber;
+
+
+if (num1 > num2) {
+    largerNumber = num1;
+} else { (num2 > num1) 
+    largerNumber = num2;
+}
+
+
+// 큰 수 출력
+document.write("첫 번째 입력한숫자:", num1); 
+document.write("두 번째 입력한숫자:", num2);
+
+
+// 짝수인지 홀수인지 판별
+if (largerNumber % 2 === 0) {
+    document.write( largerNumber+ "이 큰수이고, 짝수이다");
+}  
+else  {
+    document.write( largerNumber +"이 큰수이고 홀수입니다.");
+}
+    </script>
+    
+</body>
+</html>
